@@ -1,20 +1,16 @@
-import { useState } from "react";
 
 import * as SC from "./RatingCardStyled"
 
 import { ReactComponent as StarIcon } from "../../assets/icons/star.svg";
 
 import RadioForm from "../RadioForm/RadioForm";
+import { iProps } from "../../utils/interfaces";
 
-const RatingCard: React.FC = () => {
-const [rate, setRate] = useState("")
-
-const handleRateSubmit = (selectedOption:string) => {
-setRate(selectedOption)
-}
-console.log(rate);
-
-  return (
+const RatingCard: React.FC<iProps> = ({ handleRateSubmit }) => {
+  
+  
+  
+    return (
     <SC.RatingCardCustom>
       <SC.LogoCustom>
         <StarIcon />

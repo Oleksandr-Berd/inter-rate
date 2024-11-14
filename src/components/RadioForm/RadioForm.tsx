@@ -1,10 +1,9 @@
 import { useState } from "react";
 
 import * as SC from "./RadioFormStyled"
+import { iProps } from "../../utils/interfaces";
 
-type iProps = {
-  handleRateSubmit: (selectedOption:string)=> void
-};
+
 export const RadioForm: React.FC<iProps> = ({ handleRateSubmit }) => {
   const [selectedOption, setSelectedOption] = useState<string>("");
 
@@ -71,7 +70,7 @@ export const RadioForm: React.FC<iProps> = ({ handleRateSubmit }) => {
           <span>5</span>
         </SC.LabelCustom>
       </SC.OptionListCustom>
-      <button type="submit">submit</button>
+      <SC.SubmitBtnCustom type="submit">submit</SC.SubmitBtnCustom>
     </form>
   );
 };

@@ -9,6 +9,8 @@ export const RatingCardCustom = styled.div`
   text-align: left;
 
   background: radial-gradient(circle, #232a34, #181e27);
+
+  border-radius: 15px;
 `;
 
 export const LogoCustom = styled.div`
