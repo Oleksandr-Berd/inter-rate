@@ -11,10 +11,31 @@ export const RatingCardCustom = styled.div`
   background: radial-gradient(circle, #232a34, #181e27);
 
   border-radius: 15px;
+
+  @media (min-width: 1220px) {
+    /* width: 412px; */
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 32px;
+    padding-top: 48px;
+    padding-right: 39px;
+    padding-bottom: 32px;
+  }
 `;
 
 export const LogoCustom = styled.div`
   margin-bottom: 16px;
+
+  @media (min-width: 1220px) {
+    margin-bottom: 30px;
+
+    & svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
 `;
 
 export const Title = styled.h3`
@@ -25,6 +46,12 @@ export const Title = styled.h3`
   font-weight: bold;
 
   color: #fff;
+
+  @media (min-width: 1220px) {
+    margin-bottom: 15px;
+
+    font-size: 28px;
+  }
 `;
 
 export const ContentCustom = styled.p`
@@ -35,4 +62,11 @@ export const ContentCustom = styled.p`
   font-weight: 400;
   line-height: 1.57;
   color: #969fad;
+
+  @media (min-width: 1220px) {
+    width: 340px;
+
+    font-size: 15px;
+    line-height: 1.6;
+  }
 `;
