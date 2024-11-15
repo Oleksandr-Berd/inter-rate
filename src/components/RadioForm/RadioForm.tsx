@@ -9,11 +9,13 @@ export const RadioForm: React.FC<iProps> = ({ handleRateSubmit }) => {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedOption(event.target.value);
+
   };
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault(); 
     handleRateSubmit(selectedOption);
+    
   };
 
   return (
@@ -23,7 +25,7 @@ export const RadioForm: React.FC<iProps> = ({ handleRateSubmit }) => {
           <input
             type="radio"
             name="option"
-            value="option1"
+            value="1"
             checked={selectedOption === "option1"}
             onChange={handleChange}
           />
@@ -33,7 +35,7 @@ export const RadioForm: React.FC<iProps> = ({ handleRateSubmit }) => {
           <input
             type="radio"
             name="option"
-            value="option2"
+            value="2"
             checked={selectedOption === "option2"}
             onChange={handleChange}
           />
@@ -43,7 +45,7 @@ export const RadioForm: React.FC<iProps> = ({ handleRateSubmit }) => {
           <input
             type="radio"
             name="option"
-            value="option3"
+            value="3"
             checked={selectedOption === "option3"}
             onChange={handleChange}
           />
@@ -53,8 +55,8 @@ export const RadioForm: React.FC<iProps> = ({ handleRateSubmit }) => {
           <input
             type="radio"
             name="option"
-            value="option4"
-            checked={selectedOption === "option3"}
+            value="4"
+            checked={selectedOption === "option4"}
             onChange={handleChange}
           />
           <span>4</span>
@@ -63,8 +65,8 @@ export const RadioForm: React.FC<iProps> = ({ handleRateSubmit }) => {
           <input
             type="radio"
             name="option"
-            value="option5"
-            checked={selectedOption === "option3"}
+            value="5"
+            checked={selectedOption === "option5"}
             onChange={handleChange}
           />
           <span>5</span>
