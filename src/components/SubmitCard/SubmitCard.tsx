@@ -6,15 +6,15 @@ import { iProps } from "../../utils/interfaces";
 const SubmitCard:React.FC<Partial <iProps>> = ({rate}) => {
     return (
       <SC.SubmitCardCon>
-        <div>
+        <SC.PicCon>
           <SubmitPic />
-        </div>
-        <p>You selected {rate} out of 5</p>
+        </SC.PicCon>
+        <SC.Selection>You selected {rate} out of 5</SC.Selection>
         <h3>Thank you!</h3>
-        <p>
+        <SC.Content>
           We appreciate you taking the time to give a rating. If you ever need
           more support, don’t hesitate to get in touch!
-        </p>
+        </SC.Content>
       </SC.SubmitCardCon>
     );
 }
